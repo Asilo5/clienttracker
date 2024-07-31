@@ -1,24 +1,15 @@
-import logo from './logo.svg';
+import ClientListArtistView from './ArtistView/Component/ClientListArtistView';
+import ClientList from './ClientView/Component/ClientList';
 import './App.css';
 
 function App() {
+  // have function that says if client clicks on client to take them to ClientList
+  // but if they click on artist to take them to ClientListArtistView page
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <button>Client</button>
+    <button>Artist</button>
+   </div>
   );
 }
 
